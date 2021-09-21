@@ -6,26 +6,72 @@
     <meta name="description" content="16 semaines pour devenir développeur full-stack JavaScript web  web mobile.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
     
+    
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Newsletter</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                    <div class="mb-3">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Email</span>
+                            <input type="text" class="form-control" placeholder="ex:lala@land.com" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                        
+                    </div>
+                    <div class=" justify-content-start">
+                        <button type="button" class="btn text btn-primary">S'abonner</button>
+                    </div>
+              </form>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+
     <div class="container-fluid">
         <div class="row bg-dark">
             <div class="col">
                 <div>
+                    
                     <nav class="nav list-style-type-none">
                         <a class="nav-link text-light active" aria-current="page" href="#">Homepage</a>
                         <a class="nav-link  text-light" href="#">Home</a>
-                        <a class="nav-link text-secondary" href="#">Team</a>
+                        <a class="btn dropdown btn-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                         link
+                          </a>
                         <a class="nav-link text-secondary disabled">Contact</a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Vincent</a></li>
+                            <li><a class="dropdown-item" href="#">Béatrice</a></li>
+                            <li><a class="dropdown-item" href="#">Rosita</a></li>
+                          </ul>
                     </nav>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="container">
+        <div class="row">
+            <div class="alert alert-danger text-center" role="alert">
+            Une erreur serveur est survenue. Veuillez rafraîchir la page ou rééssayer plus tard.
+            </div>
+        </div>  
+    </div>
   
     <div class="container">
         <div class="row bg-secondary">
@@ -37,6 +83,15 @@
             </div>
         </div>
         
+        <div class="row justify-content-center mt-5">
+            <div class="col-3 ">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Launch demo modal
+                  </button>
+            </div>
+
+        </div>
+
         <div class="row mt-5">
             
                 <div class="col-4">
@@ -47,7 +102,7 @@
                 </div>
                 <div class="col-4 ">
                     <div class="bg-warning"> 
-                        <h2>Planification</h2>
+                        <h2>Action</h2>
                        <div class="bd-highlight">
                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquid ratione, facere placeat consequatur delectus accusamus cupiditate quo similique, illum labore doloremque nostrum officiis qui veniam facilis voluptatibus asperiores dolores.</p>
                         </div>
@@ -55,7 +110,7 @@
                 </div>
                 <div class="col-4">
                     <div>
-                        <h2>Planification</h2>
+                        <h2>Analysis</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquid ratione, facere placeat consequatur delectus accusamus cupiditate quo similique, illum labore doloremque nostrum officiis qui veniam facilis voluptatibus asperiores dolores.</p>
                     </div>
                 </div>
